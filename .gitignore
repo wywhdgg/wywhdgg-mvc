@@ -1,58 +1,17 @@
-# Compiled class file
-.idea/
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-*.iml
-
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-/target
-/out
-/classes
-/checkouts
-/.lein-*
-/.env
-*.iml
-.idea
+target/
 .DS_Store
-*/target
-.svn
-.project
-.settings
-.classpath
-logs
-/log
-/tmp
-hotspot.log
-
-# IntelliJ project files
-/.idea/
-.idea
+*.un~
 *.iml
-out
-gen
-/*/target/
-/target/
-/logs/
-/*/module*.xml
-/*/logs/
-target
+*/*.iml
+.idea/
+*.swp
+rebel.xml
+logs/
+gitPullCommitPush.sh
+.metadata
+.settings/
+.project
+.classpath
+*.rebel.xml.bak
+
+
