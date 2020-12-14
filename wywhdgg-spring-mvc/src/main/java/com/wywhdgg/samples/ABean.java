@@ -17,7 +17,7 @@ public class ABean {
 	private DBean dbean;
 
 	@Autowired
-		public ABean(@Value("mike") String name, @Qualifier("cbean01") CBean cb) {
+		public ABean(@Value("xiaodong") String name, @Qualifier("cbean01") CBean cb) {
 		super();
 		this.name = name;
 		this.cb = cb;
