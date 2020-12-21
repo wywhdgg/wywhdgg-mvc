@@ -4,9 +4,12 @@ import com.wywhdgg.mvc.aop.pointcut.AspectJExpressionPointcut;
 import com.wywhdgg.mvc.aop.pointcut.Pointcut;
 
 /***
+ *
+ *  抽象出来
+ *
  *@author dzb
  *@date 2019/11/27 7:51
- *@Description:  抽象出来
+ *@Description:
  *@version 1.0.0
  */
 public abstract class AbstractPointcutAdvisor implements PointcutAdvisor{

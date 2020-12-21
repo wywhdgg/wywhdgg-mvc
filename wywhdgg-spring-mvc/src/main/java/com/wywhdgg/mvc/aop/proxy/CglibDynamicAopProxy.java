@@ -12,7 +12,16 @@ import lombok.extern.slf4j.Slf4j;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
-
+/***
+ *
+ *
+ * cglib代理
+ *
+ *@author dzb
+ *@date 2019/11/27 7:58
+ *@Description:
+ *@version 1.0.0
+ */
 @Slf4j
 public class CglibDynamicAopProxy implements AopProxy, MethodInterceptor {
 	private static Enhancer enhancer = new Enhancer();

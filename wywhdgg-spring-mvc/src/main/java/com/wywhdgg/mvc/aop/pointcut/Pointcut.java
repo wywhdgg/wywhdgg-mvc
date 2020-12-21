@@ -3,6 +3,9 @@ package com.wywhdgg.mvc.aop.pointcut;
 import java.lang.reflect.Method;
 
 /***
+ *
+ * 切入点
+ *
  *@author dzb
  *@date 2019/11/27 7:18
  *@Description:

@@ -4,6 +4,10 @@ import java.util.List;
 
 /**
  * 注册
+ * @author dzb
+ * @date 2019/11/27 7:01
+ * @Description:
+ *@version 1.0.0
  * **/
 public interface AdvisorRegistry {
 

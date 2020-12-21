@@ -9,7 +9,16 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.List;
-
+/***
+ *
+ *
+ *JDK代理
+ *
+ *@author dzb
+ *@date 2019/11/27 7:58
+ *@Description:
+ *@version 1.0.0
+ */
 @Slf4j
 public class JdkDynamicAopProxy implements AopProxy, InvocationHandler {
 

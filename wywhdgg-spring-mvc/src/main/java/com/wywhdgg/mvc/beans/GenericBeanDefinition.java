@@ -9,6 +9,9 @@ import lombok.ToString;
 import org.apache.commons.lang3.StringUtils;
 
 /***
+ *
+ * bean定义注入
+ *
  *@author dzb
  *@date 2019/11/25 23:03
  *@Description:

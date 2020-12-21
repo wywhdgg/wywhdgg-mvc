@@ -4,7 +4,16 @@ import com.wywhdgg.mvc.aop.advisor.Advisor;
 import com.wywhdgg.mvc.beans.BeanFactory;
 import java.lang.reflect.Proxy;
 import java.util.List;
-
+/***
+ *
+ *
+ * 默认jdk代理
+ *
+ *@author dzb
+ *@date 2019/11/27 7:58
+ *@Description:
+ *@version 1.0.0
+ */
 public class DefaultAopProxyFactory implements AopProxyFactory {
     @Override
     public AopProxy createAopProxy(Object bean, String beanName, List<Advisor> matchAdvisors, BeanFactory beanFactory) throws Throwable {

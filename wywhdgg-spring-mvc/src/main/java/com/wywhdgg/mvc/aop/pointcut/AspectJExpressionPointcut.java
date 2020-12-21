@@ -1,26 +1,34 @@
 package com.wywhdgg.mvc.aop.pointcut;
 
 import java.lang.reflect.Method;
+
 import org.aspectj.weaver.tools.PointcutExpression;
 import org.aspectj.weaver.tools.PointcutParser;
 import org.aspectj.weaver.tools.ShadowMatch;
 
 /***
- *@author  2019/11/27 7:18
+ *
+ * 切入表达式解析器
+ *@author 2019/11/27 7:18
  *@Description:
-  切入表达式解析器
  *@version 1.0.0
  */
-public class AspectJExpressionPointcut implements  Pointcut {
+public class AspectJExpressionPointcut implements Pointcut {
 
-    /**获取切点解析器**/
+    /**
+     * 获取切点解析器
+     **/
     private static PointcutParser pp = PointcutParser
-        .getPointcutParserSupportingAllPrimitivesAndUsingContextClassloaderForResolution();
+            .getPointcutParserSupportingAllPrimitivesAndUsingContextClassloaderForResolution();
 
-    /**表达式**/
+    /**
+     * 表达式
+     **/
     private String expression;
 
-    /**匹配类工具**/
+    /**
+     * 匹配类工具
+     **/
     private PointcutExpression pe;
 
     public AspectJExpressionPointcut(String expression) {
@@ -33,7 +41,7 @@ public class AspectJExpressionPointcut implements  Pointcut {
 
     @Override
     public boolean matchsClass(Class<?> targetClass) {
-        return  pe.couldMatchJoinPointsInType(targetClass);
+        return pe.couldMatchJoinPointsInType(targetClass);
     }
 
     @Override

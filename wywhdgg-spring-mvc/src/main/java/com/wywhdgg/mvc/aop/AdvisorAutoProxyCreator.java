@@ -8,12 +8,14 @@ import com.wywhdgg.mvc.aop.proxy.AopProxyFactory;
 import com.wywhdgg.mvc.beans.BeanFactory;
 import com.wywhdgg.mvc.beans.BeanFactoryAware;
 import com.wywhdgg.mvc.beans.BeanPostProcessor;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
+
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ReflectionUtils;
@@ -21,12 +23,19 @@ import org.springframework.util.ReflectionUtils;
 /***
  * AOP增强处理的观察者
  * （观察者模式/监听模式）
- *
+ * @author dzb
+ * @date 2019/11/27 7:58
+ * @Description:
+ * @version 1.0.0
  * */
 public class AdvisorAutoProxyCreator implements AdvisorRegistry, BeanPostProcessor, BeanFactoryAware {
-    /**增强的类**/
+    /**
+     * 增强的类
+     **/
     private List<Advisor> advisors;
-    /**注册bean工厂**/
+    /**
+     * 注册bean工厂
+     **/
     private BeanFactory beanFactory;
 
     public AdvisorAutoProxyCreator() {
@@ -114,6 +123,6 @@ public class AdvisorAutoProxyCreator implements AdvisorRegistry, BeanPostProcess
 
     private Object createProxy(Object bean, String beanName, List<Advisor> matchAdvisors) throws Throwable {
         // 通过AopProxyFactory工厂去完成选择、和创建代理对象的工作。
-            return AopProxyFactory.getDefaultAopProxyFactory().createAopProxy(bean, beanName, matchAdvisors, beanFactory).getProxy();
+        return AopProxyFactory.getDefaultAopProxyFactory().createAopProxy(bean, beanName, matchAdvisors, beanFactory).getProxy();
     }
 }

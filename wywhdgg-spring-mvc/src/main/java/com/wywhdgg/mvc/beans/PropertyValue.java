@@ -4,6 +4,8 @@ import lombok.Data;
 import lombok.ToString;
 
 /***
+ * 属性值
+ *
  *@author dzb
  *@date 2019/11/26 6:55
  *@Description:
